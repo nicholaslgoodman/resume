@@ -1,0 +1,312 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+% (c) 2009-2012 Derek R. Hildreth <derek@derekhildreth.com> http://www.derekhildreth.com 
+% (c) 2016 Nicholas L. Goodman <nicholas.lee.goodman@gmail.com> http://www.nicholasleegoodman.com
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+% GENERAL NOTE:  There may be some notes specific to myself.  If you're only interested in my LaTeX source or it doesn't make sense, please disregard it.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black 
+    %urlcolor=mygreylink     % can put red here to better visualize the links
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.85}
+\definecolor{mygreylink}{gray}{.40}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large {\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\ressubsubheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textit{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+\renewcommand*\rmdefault{lmss}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+%General Resume Tips
+%   No periods!  Technically, nothing in this document is a full sentence.
+%   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
+%   More tips on bottom of this LaTeX document.
+%-----------------------------------------------------------
+
+\begin{document}
+
+\newcommand{\mywebheader}{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{\href{http://www.nicholasleegoodman.com/}{\LARGE Nicholas L. Goodman}}\\
+	\href{mailto:nicholas.lee.goodman@gmail.com}{nicholas.lee.goodman@gmail.com}\\
+	\href{http://www.nicholasleegoodman.com}{www.nicholasleegoodman.com} \\ 	
+	{Kirksville, MO 63501} \\
+	{918.346.2027}
+	\end{tabular*}
+\\
+\vspace{0.1in}}
+
+% CHANGE HEADER SOURCE HERE
+\mywebheader
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+\line(1,0){510}
+
+\resheading {Education}
+
+\line(1,0){510}
+
+	\begin{itemize}
+		\item
+			\ressubheading {\href{http://www.truman.edu}{Truman State University - Missouri}}{Kirsville, MO}{\href{http://www.truman.edu/majors-programs/majors-minors/computer-science-major/}{Bachelor of Applied Science in Computer Science};  {GPA:3.7}}{May 2018 (expected)}
+		\item	
+			\ressubheading{\href{http://www.nsuok.edu}{Northeastern State University - Oklahoma}}{Tahlequah, OK}{\href{https://www.nsuok.edu/Academics/DegreesMajors/GraduateMasters.aspx}{Master of Arts in English Literature}; {GPA:3.7}}{May 2011}
+		\item	
+			\ressubheading{\href{http://www.nsuok.edu}{Northeastern State University - Oklahoma}}{Tahlequah, OK}{\href{https://www.nsuok.edu/Academics/DegreesMajors/Tahlequah.aspx}{Bachelor of Arts in English}; {GPA:3.8}}{Dec. 2007}
+%				{ \footnotesize
+%				\begin{itemize}
+%					%\resitem{\textbf{Available for internship: July 23, 2009; Graduation follows internship}}
+%					\resitem{Key Courses: Object Oriented Software Development, Data Structures, \href{http://derekhildreth.com/portfolio/Resume/catalog/class.asp1045.htm}{Computer Architecture}, \href{http://derekhildreth.com/portfolio/Resume/catalog/class.asp1073.htm}{Data Communications}, \href{http://derekhildreth.com/portfolio/Resume/catalog/class.asp1072.htm}{Real-Time and Embedded Systems}, \href{http://derekhildreth.com/portfolio/Resume/catalog/class.asp1069.htm}{Digital Systems Design}}
+%					\resitem{\textbf{\href{http://www.byui.edu/Societies/Linux/}{BYU-Idaho Linux/Unix Society:}}} 
+%						\begin{itemize}
+%							\resitem{Mentoring Coordinator (Web Development) - Coordinated members of the society with new students}
+%							\resitem{Secretary - Documented and updated \href{http://www.byui.edu/Societies/Linux/default.htm}{society webpage} and communicated with \href{http://www.byui.edu/BusandComm/}{other departments}} 
+%							\resitem{Performed undergraduate research on \href{http://www.derekhildreth.com/portfolio/Research/Web_2.0_and_Beyond_Report_Column_Format.pdf}{Web 2.0 and Beyond}}
+%						\end{itemize}
+%				\end{itemize}
+%				}
+%\begin{comment}
+%		\item
+%			\ressubheading{\href{http://bcc.billings.k12.mt.us/}{Billings Career Center}}{Billings, MT}{\href{http://www.cisco.com/web/learning/netacad/index.html}{Cisco Networking Academy}; GPA:3.33}{Aug. 2002 - May 2003}
+%				{ \footnotesize
+%				\begin{itemize}
+%				\resitem{Graduated \href{http://www.cisco.com/web/learning/netacad/index.html}{Cisco Semester Four} comprising of coursework in networking infrastructures including LAN and WAN design and implementation}
+%				\end{itemize}
+%				}
+%\end{comment}
+	\end{itemize} % End Education list
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+\line(1,0){510}
+
+\resheading{Education (MOOC)}
+
+\line(1,0){510}
+
+	\begin{itemize}
+	\item
+		\ressubheading {\href{http://www.rice.edu/}{Rice University via Coursera}}{Houston, TX}{\href{http://www.codeskulptor.org/coursera/principlescomputing.html}{Principles of Computing};  {Grade Achieved: A}}{Aug. 2015}
+	\item	
+		\ressubheading {\href{http://www.rice.edu/}{Rice University via Coursera}}{Houston, TX}{\href{http://www.codeskulptor.org/coursera/interactivepython.html}{An Introduction to Interactive Programming in Python};  {Grade Achieved: A}}{May. 2015}
+	\item	
+		\ressubheading {\href{http://www.uccs.edu/}{University of Colorado via Coursera}}{Colorado Springs, CO}{\href{https://www.coursera.org/course/gameprogramming}{Beginning Game Programming with C\#};  {Grade Achieved: A}}{Nov. 2013}			
+	\end{itemize}
+
+\line(1,0){510}
+
+\resheading{Experience}
+
+\line(1,0){510}
+	\begin{itemize}
+		\item 
+			\ressubheading{\href{http://www.thelanguagecompany.com}{The Language Company }}{Kirksville, MO}
+				{English Instructor}{Sept. 2011 -- Jan. 2016}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Taught courses in Grammar, Academic Reading/Writing, and Listening/Speaking}
+					\resitem{Created School-wide final exams as member of the Curriculum Team}
+				\end{itemize}
+				}
+		\item
+			\ressubheading{\href{http://www.nsuok.edu}{Northeastern State University}}{Tahlequah, OK}
+				{Graduate Instructor}{Aug. 2008 -- May 2011}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Taught Freshman Composition and Freshman Composition II}
+				\end{itemize}
+				}
+
+			
+%		\item			
+%			\ressubheading{Entrepreneurial Experience}{Billings, MT}{On Site Computer Tech Support}{Jan. 2004 -- May 2005}
+%				{ \footnotesize				
+%				\begin{itemize}
+%					\item Initiated a freelance computer tech support business which provided the community with affordable, on-site computer service, consultation, and training
+%				\end{itemize}
+%				}
+
+	\end{itemize}  % End Experience list
+
+%%%%%%%%%%%%%%%%%%%%%%
+\line(1,0){510}
+
+\resheading{Skills}
+
+\line(1,0){510}
+
+	\begin{description}
+		\item[Technologies:] { \footnotesize 
+			Ada, C\#, Java, JS, LaTeX, Python, PHP, HTML, CSS
+		}
+		\item[Computer and OS:] { \footnotesize
+			Linux, MacOS, Windows
+		}
+		
+		\item[Software:]{\footnotesize \href{http://www.jetbrains.com/pycharm/}{PyCharm},
+\href{http://www.jetbrains.com/idea/}{IntelliJ Idea},
+\href{http://www.aptana.com/}{Aptana IDE}
+
+} 
+		\item[Communication:] { \footnotesize
+			Writing, Editing, Public Speaking
+		}
+
+
+%   \item[Projects:] { \footnotesize 
+                   %\href{https://bitbucket.org/dhildreth/canon_webview}{Canon Webview Webcam Python API};
+                   %Automation Test API for \href{http://community.rightnow.com/developer/fileexchange/Connect_Web_Services_for_SOAP_February_2012/Default.htm}{RightNow Connect Web Services for SOAP} (.Net Toolkit);
+                   %\href{http://community.rightnow.com/developer/fileexchange/Connect_Web_Services_for_SOAP_February_2012/Default.htm}{RightNow XML API} Test Automation
+                   %\href{http://www.derekhildreth.com/portfolio/Computer_Engineering/BZFlag_Game_Controller_Computer_IO_CompE360.pdf}{Parallel port game controller}; 
+                   
+                   %Technologic Systems \href{http://www.embeddedarm.com/products/board-detail.php?product=TS-WIFIBOX}{TS-WIFIBOX} and \href{http://www.embeddedarm.com/products/board-detail.php?product=TS-WIFIBOX-2}{TS-WIFIBOX-2};
+                   %Remote Cell Phone Controller (\href{http://www.embeddedarm.com/products/board-detail.php?product=TS-7350}{embedded system}) for \href{http://www.inl.gov}{INL};
+                   %Technologic Systems Google Analytics Custom Campaign Ad Tracker/Redirect (PHP and MySQL);
+                   %CSS Diff Tool;
+                   %\href{http://www.derekhildreth.com/portfolio/Computer_Engineering/4-Bit_CPU_Fundamental_Digital_Systems_CompE224.zip}{4} and \href{http://www.derekhildreth.com/portfolio/Computer_Engineering/8-Bit_CPU_Comp_Architecture_CompE324.pdf}{8 bit RISC CPUs with ALUs, counters, registers, and 1K RAM}; 
+                   %Stereo amplifier with I/O, bass, treble, and volume controls; 
+                   %\href{http://www.derekhildreth.com/portfolio/Computer_Engineering/Zener_Diode_Power_Supply_Basics_Electrics_Devices_and_Circtuits_CompE350.pdf}{Power supply basics}; 
+                   %\href{http://www.derekhildreth.com/portfolio/Computer_Engineering/Microphone_Preamplifier_Electrics_Devices_and_Circuits_CompE350.pdf}{Portable microphone amplifier}
+                   %WAV music player; 
+                   %\href{http://www.derekhildreth.com/portfolio/Computer_Engineering/Simple_Calculator_Verilog_Digital_Systems_Design_CompE340.pdf}{Simple calculator}; 
+%   }
+	\end{description} % End Skills list
+
+\line(1,0){510}
+
+\resheading{\href{https://github.com/nicholaslgoodman}{Projects}}
+
+\line(1,0){510}
+
+\begin{description}
+\item[TimeSlice:] { \footnotesize TimeSlice is an in-development time managment application based on the "time box" concept, primarily written in JavaScript for use as a Chrome App.}
+
+\end{description}
+
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Example projects. not mine.
+%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\myheader
+%\resheading{Hardware Engineering Projects} % Example projects, not mine.
+%	
+%	\begin{description}
+%		\item[4 and 8 bit RISC CPUs] {\footnotesize Simple CPUs designed using CircuitMaker (no HDL) which contained ALUs, counters, registers, and 1K RAM all designed from scratch}
+%		\item[Simple Calculator] {\footnotesize Designed a simple calculator from the ground up using Xilinx ISE and Verilog HDL} % Get schematic block diagram for this one!
+%		\item[Stereo Amplifier] {\footnotesize Contained I/O as well as bass, treble, and volume controls}
+%		\item[Power Supply Basics] {\footnotesize Learned about the very basics of power supply design using transformers, rectifiers, and zener diodes and voltage regulators.} 
+%		\item[Parallel Port Game Controller] {\footnotesize Went through the start to finish development process of a game controller including driver development, microprocessor  \& ADC design (8255 MicroBoard; N.I.	ADC0809), and PCB design}
+%		\item[Portable Microphone Amplifier] {\footnotesize Utilized a series of transistors to amplify sound in a room with a potentiometer as volume control}
+%		\item[MP3 Player] {\footnotesize Developed an MP3 player using the Analog Devices BlackFin BF533 microprocessor and EZ-KIT development kit which utilized interrupts and audio codec}  % get link to block diagram for this one!
+%		\item[INL Remote Cell Phone Control] {\footnotesize Senior project which developed a prototype for Idaho National Laboratories allowing them to remote control a cell phone via 802.11g and bluetooth at a range greater than 6000ft consisting of 3 major components: central control, wireless medium, and embedded systems for chuckar box}
+%		\item[Inverted Pendulum] {\footnotesize Used sliding mode feedback control and inverted pendulum kit to keep metal rod standing vertially on a swingin arm}
+%		\item[FM Transmitter] {\footnotesize Built a simple FM Transmitter based off of given schematics as an introduction to FM modulation signals}
+%	\end{description}
+%
+%
+%\resheading{Software Engineering Projects}  % Example projects, not mine.:
+%	\begin{description}
+%		\item[Book Keyword Scanner] {\footnotesize Developed a program which will take any input file and, given a keyword search, will return the frequency of that word }
+%		\item[Pedigree Chart] {\footnotesize Developed a program which will parse through a pedigree file and display a pedigree chart in the command line}
+%		\item[Factory Nail Rejection] {\footnotesize This program was simulating a factory which produced nails that had to be a very specific length, and if it wasn't, the program would reject it}
+%		\item[Calendar Program] {\footnotesize Given the time and date to display, the calendar program would display a simple calendar on the command line which took into account leap years}
+%		\item[Normal Distribution] {\footnotesize This program simulated the classic wheel of fortune blinko game where several thousand chip were statistially recorded and displayed as they dropped into a board filled with pegs}
+%		\item[RSA Encryption] {\footnotesize Developed an application which utilized the RSA encryption method to encrypt and decrypt messages}
+%	\end{description}
+%
+%\end{document}
+
+% Example references
+%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\myheader
+%\resheading{References}
+%	\begin{center}
+%		\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}  l l l }
+%			Toby Rummans & Eric Karl & Gordon Smith \\
+%			Entry Level Web Developer & Computer Science \& Engineering  & Technology Support Specialist \\ 
+%			\vspace{10pt} 
+%			Memolinkcorp & BYU-Idaho & BYU-Idaho \\ 
+%			[removed] & 525 South Center St. & 525 South Center St.  \\
+%			Denver, CO 80210 & Rexburg ID 83460 & Rexburg ID 83460 \\
+%			[removed] & (208) 496-3097 & (208) 496-2816 \\
+%		\end{tabular*}
+%	\end{center}
+	
+% \end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% GENERAL RESUME NOTES %
+%%%%%%%%%%%%%%%%%%%%%%%%
+%Need to brush up on the skills section?  Here are some really good ideas:
+%
+%- Communication: The ability to express and interpret ideas and convey knowledge. 
+%Skills like speaking effectively, writing concisely, listening attentively, expressing ideas, 
+%reporting information, editing, interviewing, and facilitating group discussion. 
+% 
+%- Research and Planning: The ability to search for specific knowledge and formulate a 
+%program for a definite course of action. Skills like forecasting, predicting, identifying 
+%issues, finding alternatives, gathering information, solving problems, setting goals, 
+%extracting information, and developing strategies. 
+% 
+%- Human Relations: The ability to apply interpersonal skills to resolve conflict, relate to 
+%people, and help people. Skills like providing support for others, listening, delegating 
+%with respect, representing others, asserting, developing rapport, and perceiving 
+%feelings. 
+% 
+%- Management, Organization, Leadership: The ability to supervise others and guide 
+%individuals and groups towards the completion of tasks. Skills like managing groups, 
+%selling ideas, making decisions, managing conflict, coordinating tasks, teaching, 
+%enlisting help. 
+%
+%Source: 
+%http://www.squawkfox.com/2009/03/08/6-action-words-that-make-your-resume-rock/
+%
+%Other Resources: 
+%http://www.tvmier.com/Resume_Education.html
+
