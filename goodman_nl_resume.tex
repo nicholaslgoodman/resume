@@ -1,4 +1,4 @@
-% goodman_nl_resume.tex
+% resume.tex
 %
 % (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
 % (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
@@ -15,6 +15,8 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage[pdftex]{hyperref}
+\usepackage{multicol}
+\setlength{\columnsep}{6cm}
 \hypersetup{
     colorlinks,%
     citecolor=black,%
@@ -57,17 +59,25 @@
 \begin{document}
 
 \newcommand{\mywebheader}{
-\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+
+    \begin{center}
 	\textbf{\href{http://www.nicholasleegoodman.com/}{\LARGE Nicholas L. Goodman}}\\
-	\href{mailto:nicholas.lee.goodman@gmail.com}{nicholas.lee.goodman@gmail.com}\\
+		\href{mailto:nicholas.lee.goodman@gmail.com}{nicholas.lee.goodman@gmail.com}\\
+		{Coralville, IA} \\
+	{918.346.2027}
+	\end{center}
+	\\
+	\begin{multicols}{2}
+
+
 	\href{http://www.nicholasleegoodman.com}{www.nicholasleegoodman.com} \\ 
 	\href{https://github.com/nicholaslgoodman}{GitHub: nicholaslgoodman} \\
 	\href{https://www.hackerrank.com/nicholasleeg}{HackerRank: @nicholasleeg} \\ 
 	\href{https://www.linkedin.com/in/nicholasleegoodman}{LinkedIn: /in/nicholasleegoodman} \\
 	
-	{Coralville, IA} \\
-	{918.346.2027}
-	\end{tabular*}
+
+		\end{multicols}
+
 \\
 \renewcommand{\labelitemi}{$-$}
 
@@ -87,9 +97,21 @@
 
 		\item
 			\ressubheading {
-			\href{http://www.truman.edu}{University of Iowa}}{Iowa City, IA}
-			{\href{http://www.truman.edu/majors-programs/majors-minors/computer-science-major/}{Bachelor of Science in Computer Science} - GPA:3.8}
+			\href{http://www.truman.edu}{University of Iowa}{ -- Iowa City, IA}}{GPA: 3.8/4.0}
+			{\href{http://www.truman.edu/majors-programs/majors-minors/computer-science-major/}{Bachelor of Science in Computer Science}}
 			{ \footnotesize{May 2018 (expected)}}
+			
+		\item
+			\ressubheading {
+			\href{http://www.nsuok.edu}{Northeastern State University}{ -- Tahlequah, OK}}{GPA: 3.7/4.0}
+			{Master of Arts in English Literature}
+			{ \footnotesize{May 2011}}
+			
+		\item
+			\ressubheading {
+			\href{http://www.nsuok.edu}{Northeastern State University}{ -- Tahlequah, OK}}{GPA: 3.8/4.0}
+			{Bachelor of Arts in English}
+			{ \footnotesize{May 2008}}
 
 		\end{description} % End Education list
 
@@ -104,17 +126,17 @@
 	\begin{description}
 	
 			\item 
-			\ressubheading{\href{http://www.truman.edu}{Truman State University }}{Kirksville, MO}
-				{Teaching Assistant, Computer Science}{ \footnotesize{May 2016 -- July 2016}}
+			\ressubheading{\href{http://www.truman.edu}{Truman State University -- Kirksville, MO }}{}
+				{Teaching Assistant, Computer Science -- Graded student assignments}{ \footnotesize{May 2016 -- July 2016}}
 
 
 		\item 
-			\ressubheading{\href{http://www.thelanguagecompany.com}{The Language Company at Truman State University}}{Kirksville, MO}
-				{English Instructor}{ \footnotesize{Sept. 2011 -- Jan. 2016}}
+			\ressubheading{\href{http://www.thelanguagecompany.com}{The Language Company at Truman State University -- Kirksville, MO}}{}
+				{English Instructor -- Taught university composition and speaking}{ \footnotesize{Sept. 2011 -- Jan. 2016}}
 
 		\item
-			\ressubheading{\href{http://www.nsuok.edu}{Northeastern State University}}{Tahlequah, OK}
-				{Graduate Instructor}{ \footnotesize{Aug. 2008 -- May 2011}}
+			\ressubheading{\href{http://www.nsuok.edu}{Northeastern State University -- Tahlequah, OK}}{}
+				{Graduate Instructor -- Taught Freshman Composition I \& II}{ \footnotesize{Aug. 2008 -- May 2011}}
 
 
 	\end{description}  % End Experience list
@@ -122,30 +144,61 @@
 %%%%%%%%%%%%%%%%%%%%%%
 
 
+\resheading{Languages}
+
+\line(1,0){510}
+
+
+		
+		\begin{itemize}
+		    \item \textbf{Ada, Java} Coursework at Truman State University and University of Iowa included standard algorithms and structures including doubly-linked lists, recursion, and unit testing
+		    \item \textbf{Python} Three years experience, completed four Coursera courses through Rice University; projects include physics-graphs in pyplot, Monte Carlo simulation, and 2D game programming 
+		%{Ada, Java, JS, \LaTeX, Python}{} {Coursework included standard algorithms and structures including \\ doubly-linked lists, recursion, and unit testing (JUnit and		}{}
+		\end{itemize}
+		
+	
 \resheading{Skills}
 
 \line(1,0){510}
 
 	\begin{description}
-		\item  [Technologies:] { \footnotesize 
-			Ada, C\#, CSS, Git, HTML, Java, JS, \LaTeX, Python
-		}
-		\item[OS:] { \footnotesize
-			Linux, Windows
-		}
+    	\item[Other Languages] Bash scripting, C\#, CSS, HTML, JS, \LaTeX , PHP
+
+		\item[Operating Systems]
+			Linux (Ubuntu), Windows
+	
 		
-		\item[Software:]{\footnotesize \href{http://www.jetbrains.com/pycharm/}{PyCharm},
+		\item[Software] Git, \href{http://www.jetbrains.com/pycharm/}{PyCharm},
 		\href{http://www.jetbrains.com/idea/}{IntelliJ IDEA},
-		\href{http://www.aptana.com/}{Aptana IDE}
+		\href{http://www.aptana.com/}{Aptana IDE}, Adobe Photoshop, Premiere
 
-} 
-		\item[Communication:] { \footnotesize
-			Writing, Editing, Public Speaking
-		}
 
+		\item[Communication] 
+			Eight years of teaching -- excellent with Public Speaking, Writing and Editing
+	
 	\end{description} % End Skills list
 
 
+\resheading{Projects}
+
+\line(1,0){510}
+
+	\begin{description}
+		\item 
+    		\ressubheading
+    		{TimeSlice -- JS and JQuery, Managed with Git (Local and Github)}{}
+    		{Developing time management app for timeboxing aka Pomodoro Technique}{}
+		\item 
+    		\ressubheading
+    		{Websites -- HTML, CSS, JS, PHP}{}
+    		{Designing web pages professionally since 1998; currently managing a Wordpress blog}{}
+
+		
+		
+
+
+
+	\end{description} % End Skills list
 
 
 \end{document}
