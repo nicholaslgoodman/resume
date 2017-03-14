@@ -31,7 +31,7 @@
 \textheight=9.0in
 \raggedbottom
 \raggedright
-\setlength{\tabcolsep}{0in}
+\setlength{\tabcolsep}{-.08in}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.375in}
@@ -44,16 +44,13 @@
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
 \newcommand{\resheading}[1]{{\large {\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
-\newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+\newcommand{\ressubheading}[4]
+{\begin{tabular*}{6.8in}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
 		\textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
 
-\newcommand{\ressubsubheading}[2]{
-\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
-		\textit{#1} & \textit{#2} \\
-\end{tabular*}\vspace{-6pt}}
+
 \renewcommand*\rmdefault{lmss}
 
 \begin{document}
@@ -61,55 +58,52 @@
 \newcommand{\mywebheader}{
 
     \begin{center}
-	\textbf{\href{http://www.nicholasleegoodman.com/}{\LARGE Nicholas L. Goodman}}\\
-		\href{mailto:i@nicholasleegoodman.com}{i@nicholasleegoodman.com}\\
-		{Coralville, IA} \\
-	{918.346.2027}
+    	\textbf{\href{http://www.nicholasleegoodman.com/}{\LARGE Nicholas L. Goodman}\\[0.25\baselineskip]}
+    	
+
+		
+		\href{mailto:i@nicholasleegoodman.com}{i@nicholasleegoodman.com}
+		\\[0.25\baselineskip]
+	
+		Coralville, IA 
+		\\[0.25\baselineskip]
+	
+	    918.346.2027
 	\end{center}
-	\\
+
 	\begin{multicols}{2}
 
+	\href{http://www.nicholasleegoodman.com}{www.nicholasleegoodman.com}  
+	\href{https://github.com/nicholaslgoodman}{GitHub: nicholaslgoodman} 
+	\href{https://www.hackerrank.com/nicholasleeg}{HackerRank: @nicholasleeg}
+	\href{https://www.linkedin.com/in/nicholasleegoodman}{LinkedIn: /in/nicholasleegoodman} 	
 
-	\href{http://www.nicholasleegoodman.com}{www.nicholasleegoodman.com} \\ 
-	\href{https://github.com/nicholaslgoodman}{GitHub: nicholaslgoodman} \\
-	\href{https://www.hackerrank.com/nicholasleeg}{HackerRank: @nicholasleeg} \\ 
-	\href{https://www.linkedin.com/in/nicholasleegoodman}{LinkedIn: /in/nicholasleegoodman} \\
-	
-
-		\end{multicols}
-
-\\
+	\end{multicols}
 \renewcommand{\labelitemi}{$-$}
-
 \vspace{0.1in}}
-
 % CHANGE HEADER SOURCE HERE
 \mywebheader
-
 %%%%%%%%%%%%%%%%%%%%%%
 
 
 \resheading {Education}
 
-\line(1,0){510}
+\line(1,0){500}
 
 	\begin{description}
 
 		\item
-			\ressubheading {
-			\href{http://www.truman.edu}{University of Iowa}{ -- Iowa City, IA}}{GPA: 3.8/4.0}
-			{\href{http://www.truman.edu/majors-programs/majors-minors/computer-science-major/}{Bachelor of Science in Computer Science}}
-			{ \footnotesize{May 2018 (expected)}}
+		\ressubheading{\href{http://www.uiowa.edu}{University of Iowa}{ -- Iowa City, IA}}{GPA:3.8/4.0}
+			{\href{https://cs.uiowa.edu/undergraduate-programs/computer-science}{Bachelor of Science in Computer Science}}
+			{ \footnotesize{December 2018}}
 			
 		\item
-			\ressubheading {
-			\href{http://www.nsuok.edu}{Northeastern State University}{ -- Tahlequah, OK}}{GPA: 3.7/4.0}
+			\ressubheading {\href{http://www.nsuok.edu}{Northeastern State University}{ -- Tahlequah, OK}}{GPA: 3.7/4.0}
 			{Master of Arts in English Literature}
 			{ \footnotesize{May 2011}}
 			
 		\item
-			\ressubheading {
-			\href{http://www.nsuok.edu}{Northeastern State University}{ -- Tahlequah, OK}}{GPA: 3.8/4.0}
+			\ressubheading {\href{http://www.nsuok.edu}{Northeastern State University}{ -- Tahlequah, OK}}{GPA: 3.8/4.0}
 			{Bachelor of Arts in English}
 			{ \footnotesize{May 2008}}
 
@@ -117,16 +111,13 @@
 
 %%%%%%%%%%%%%%%%%%%%%%
 
-
-
-
 \resheading{Experience}
 
-\line(1,0){510}
+\line(1,0){500}
 	\begin{description}
 	
 			\item 
-			\ressubheading{\href{http://www.truman.edu}{Truman State University -- Kirksville, MO }}{}
+			\ressubheading{\href{http://www.truman.edu}{Truman State University -- Kirksville, MO}}{}
 				{Teaching Assistant, Computer Science -- Graded student assignments}{ \footnotesize{May 2016 -- July 2016}}
 
 
@@ -146,60 +137,47 @@
 
 \resheading{Languages}
 
-\line(1,0){510}
-
+\line(1,0){500}
 
 		
-		\begin{itemize}
-		    \item \textbf{Ada, Java} Coursework at Truman State University and University of Iowa included standard algorithms and structures including doubly-linked lists, recursion, and unit testing
-		    \item \textbf{Python} Three years experience, completed four Coursera courses through Rice University; projects include physics-graphs in pyplot, Monte Carlo simulation, and 2D game programming 
+		\begin{description}
+		    \item [Ada, Java --] Coursework included algorithms and data structures, included unit testing
+		    \item [Python --] Projects included graphs in pyplot, Monte Carlo simulations, and 2D game programming 
 		%{Ada, Java, JS, \LaTeX, Python}{} {Coursework included standard algorithms and structures including \\ doubly-linked lists, recursion, and unit testing (JUnit and		}{}
-		\end{itemize}
+		\end{description}
 		
 	
 \resheading{Skills}
 
-\line(1,0){510}
+\line(1,0){500}
 
 	\begin{description}
-    	\item[Other Languages] Bash scripting, C\#, CSS, HTML, JS, \LaTeX , PHP
+    	\item[Other Languages --] C\#, CSS, HTML, JS, \LaTeX , PHP
 
-		\item[Operating Systems]
-			Linux (Ubuntu), Windows
+		\item[Operating Systems --]
+			Linux, Windows
 	
 		
-		\item[Software] Git, \href{http://www.jetbrains.com/pycharm/}{PyCharm},
+		\item[Software --] Git, \href{http://www.jetbrains.com/pycharm/}{PyCharm},
 		\href{http://www.jetbrains.com/idea/}{IntelliJ IDEA},
 		\href{http://www.aptana.com/}{Aptana IDE}, Adobe Photoshop, Premiere
 
 
-		\item[Communication] 
-			Eight years of teaching -- excellent with Public Speaking, Writing and Editing
+		\item[Communication --] 
+			Excellent Public Speaking, Writing and Editing
 	
 	\end{description} % End Skills list
 
 
 \resheading{Projects}
 
-\line(1,0){510}
+\line(1,0){500}
 
 	\begin{description}
-		\item 
-    		\ressubheading
-    		{TimeSlice -- JS and JQuery, Managed with Git (Local and Github)}{}
-    		{Developing time management app for timeboxing aka Pomodoro Technique}{}
-		\item 
-    		\ressubheading
-    		{Websites -- HTML, CSS, JS, PHP}{}
-    		{Designing web pages professionally since 1998; currently managing a Wordpress blog}{}
-
+		\item[TimeSlice --]{Developing time management app for timeboxing aka Pomodoro Technique}
 		
-		
-
-
-
-	\end{description} % End Skills list
-
-
+    	\item[Web --]{Designing web pages since 1998; blog at nicholasleegoodman.com}
+    		
+	\end{description} % End Projects list
 \end{document}
 
